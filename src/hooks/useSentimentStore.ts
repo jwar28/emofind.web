@@ -10,19 +10,19 @@ interface ColorScheme {
 
 const sentimentColorSchemes: Record<SentimentType, ColorScheme> = {
 	positive: {
-		color1: "#388E3C",
-		color2: "#2E7D32",
-		color3: "#1B5E20",
+		color1: "#1B5E20",
+		color2: "#0D3D14",
+		color3: "#06270C",
 	},
 	negative: {
-		color1: "#C62828",
-		color2: "#B71C1C",
-		color3: "#8E0000",
+		color1: "#8E0000",
+		color2: "#5D0000",
+		color3: "#3A0000",
 	},
 	neutral: {
-		color1: "#9E9E9E",
-		color2: "#757575",
-		color3: "#616161",
+		color1: "#616161",
+		color2: "#424242",
+		color3: "#212121",
 	},
 };
 
@@ -33,7 +33,7 @@ interface SentimentState {
 }
 
 const useSentimentStore = create<SentimentState>((set, get) => ({
-	sentiment: "neutral",
+	sentiment: "negative",
 	setSentiment: (sentiment) => set({ sentiment }),
 	getColorScheme: () => sentimentColorSchemes[get().sentiment],
 }));

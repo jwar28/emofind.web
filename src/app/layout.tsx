@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SentimentBackground from "@/components/layout/sentiment-background";
+import Header from "@/components/layout/header";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
 			>
 				<SentimentBackground />
+				<Header logoSrc="/logo.png"/>
 				<div className="relative z-10">{children}</div>
 			</body>
 		</html>

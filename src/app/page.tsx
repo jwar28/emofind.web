@@ -1,4 +1,11 @@
 "use client";
+
+import CustomTextarea from "@/components/prompt/custom-textarea";
+
 export default function Home() {
-	return <div className="relative w-full h-screen"></div>;
+	return (
+		<div >
+			<CustomTextarea />
+		</div>
+	);
 }

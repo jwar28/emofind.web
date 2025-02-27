@@ -30,7 +30,7 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
 			>
 				<SentimentBackground />
-				<Header logoSrc="/logo.png"/>
+				<Header logoSrc="/logo.png" />
 				<div className="relative z-10">{children}</div>
 			</body>
 		</html>

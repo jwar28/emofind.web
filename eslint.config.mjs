@@ -22,7 +22,7 @@ export default [
 		"next/core-web-vitals",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:prettier/recommended",
-		"prettier"
+		"prettier",
 	),
 	{
 		plugins: {
@@ -37,6 +37,8 @@ export default [
 		},
 
 		rules: {
+			'react/no-unescaped-entities': 'off',
+			'@next/next/no-page-custom-font': 'off',
 			"import-helpers/order-imports": [
 				"warn",
 				{

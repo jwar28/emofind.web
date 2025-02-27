@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
-import { cn } from "@/lib/utils";
 import { useStatusStore } from "@/hooks/useStatusStore";
+import { useEffect } from "react";
+
+import { cn } from "@/lib/utils";
 
 interface StatusBadgeProps {
 	apiUrl?: string;

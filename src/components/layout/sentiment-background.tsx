@@ -1,6 +1,7 @@
 "use client";
 
 import useSentimentStore from "@/hooks/useSentimentStore";
+
 import Background from "./background";
 
 export default function SentimentBackground() {

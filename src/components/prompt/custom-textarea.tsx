@@ -1,9 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
+import { useStatusStore } from "@/hooks/useStatusStore";
 import type React from "react";
 import { useState } from "react";
+
 import { Button } from "@/components/ui/button";
-import { useStatusStore } from "@/hooks/useStatusStore";
+
 import { Card } from "../ui/card";
 
 export default function CustomTextarea() {
@@ -27,7 +30,7 @@ export default function CustomTextarea() {
 		<div className="md:min-h-screen w-full p-4">
 			<div className="w-full flex flex-col items-center md:justify-center md:min-h-screen md:-mt-16">
 				<Card className="p-10 flex flex-col items-center gap-3">
-					<img src="/grey-logo.png" className="h-24" />
+					<img src="/grey-logo.png" className="h-24" alt="/" />
 					<div className="w-full md:min-w-[400px] max-w-md space-y-4">
 						<textarea
 							className="w-full min-h-[150px] p-3 border rounded-md resize-y"

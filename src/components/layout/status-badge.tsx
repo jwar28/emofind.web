@@ -1,6 +1,6 @@
 "use client";
 
-import { useStatusStore } from "@/hooks/useStatusStore";
+import { useStatusStore } from "@/stores/useStatusStore";
 import { useEffect } from "react";
 
 import { cn } from "@/lib/utils";

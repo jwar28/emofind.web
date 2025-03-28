@@ -33,7 +33,7 @@ interface SentimentState {
 }
 
 const useSentimentStore = create<SentimentState>((set, get) => ({
-	sentiment: "negative",
+	sentiment: "neutral",
 	setSentiment: (sentiment) => set({ sentiment }),
 	getColorScheme: () => sentimentColorSchemes[get().sentiment],
 }));

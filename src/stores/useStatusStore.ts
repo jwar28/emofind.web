@@ -12,8 +12,8 @@ export const useStatusStore = create<StatusState>((set) => ({
 		try {
 			const response = await fetch(apiUrl);
 			set({ status: response.ok ? "online" : "offline" });
-			// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		} catch (error) {
+			console.error("Error fetching status:", error);
 			set({ status: "offline" });
 		}
 	},

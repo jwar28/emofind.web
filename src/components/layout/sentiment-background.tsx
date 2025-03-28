@@ -1,6 +1,6 @@
 "use client";
 
-import useSentimentStore from "@/hooks/useSentimentStore";
+import useSentimentStore from "@/stores/useSentimentStore";
 
 import Background from "./background";
 

@@ -18,7 +18,10 @@ export default function Header({ className }: SiteHeaderProps) {
 		>
 			<div className="container flex h-14 items-center">
 				<div className="flex items-center gap-2 ml-2">
-					<StatusBadge apiUrl={process.env.API_URL} showToggle={false} />
+					<StatusBadge
+						apiUrl={process.env.NEXT_PUBLIC_API_URL}
+						showToggle={false}
+					/>
 				</div>
 			</div>
 		</header>
